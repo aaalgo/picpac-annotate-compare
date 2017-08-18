@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<style>
+		body {font-family:Calibri;}
+	</style>
+</head>
+<body>
+<table border="1" bgcolor="#000000">
+{% for image1, image2 in images %}
+<tr>
+  <td><img src='{{image1}}' onmouseover="this.src='{{image2}}';" onmouseout="this.src='{{image1}}';" /></td>
+</tr>
+{% endfor %}
+</table>
+</body>
+
+
+<body>
+
